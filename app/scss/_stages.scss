@@ -1,0 +1,56 @@
+.stages {
+    background: #c7aa8b;
+    padding: 80px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        &-num {
+            font-family: $robotoCondesed;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: rgba(50, 50, 50, 0.09);
+        }
+
+        &-title {
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid rgba(50, 50, 50, 0.13);
+            font-family: $robotoCondesed;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #4d4d4d;
+            padding-top: 22px;
+            padding-bottom: 25px;
+        }
+
+        &-img {
+            display: flex;
+            justify-content: center;
+        }
+
+        &-text {
+            font-family: $roboto;
+            font-size: 14px;
+            line-height: 20px;
+            color: #4d4d4d;
+            max-width: 287px;
+            margin-top: 35px;
+        }
+    }
+}
+
+@media (max-width: 1040px) {
+    .stages__content{
+        justify-content: center;
+        gap: 30px;
+    }
+}
