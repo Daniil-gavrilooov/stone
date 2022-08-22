@@ -1,0 +1,32 @@
+.design {
+    padding: 127px 0;
+    background-image: url(../images/design__bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-family: $robotoCondesed;
+        font-size: 47px;
+        line-height: 55px;
+        color: #c7aa8b;
+        max-width: 842px;
+        padding-bottom: 23px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: ' ';
+            width: 60px;
+            height: 2px;
+            background-color: #C7AA8B;
+            bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .design__title{
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
